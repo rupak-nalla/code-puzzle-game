@@ -74,10 +74,13 @@ const submitBtn=document.getElementById('submit')
 submitBtn.addEventListener('click',(e)=>{
   submitBtn.disabled=true
   evalutation();
+  const Content =document.getElementById("content");
+  Content.style.display="none";
 })
 const evalBtn=document.getElementById('evaluate').addEventListener('click',evalutation)
 
 async function evalutation(){
+
   const parent = document.getElementById('response');
   const childIDs = Array.from(parent.querySelectorAll('p'))
     .map(child => child.id);
@@ -149,8 +152,7 @@ function updateTimer() {
 
 function examTimeUp() {
   evalutation();
-  const Content =document.getElementById("content");
-  Content.style.display="none";
+  
   // Add any additional logic you want to execute when the exam time is up
   // For example, you can submit the exam form or perform other actions
 }
