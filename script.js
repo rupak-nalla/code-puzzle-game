@@ -77,7 +77,6 @@ submitBtn.addEventListener('click',(e)=>{
   const Content =document.getElementById("content");
   Content.style.display="none";
 })
-const evalBtn=document.getElementById('evaluate').addEventListener('click',evalutation)
 
 async function evalutation(){
 
