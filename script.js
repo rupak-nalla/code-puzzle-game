@@ -73,9 +73,10 @@ document.querySelectorAll('.draggable').forEach((draggable) => {
 const submitBtn=document.getElementById('submit')
 submitBtn.addEventListener('click',(e)=>{
   submitBtn.disabled=true
-  evalutation();
   const Content =document.getElementById("content");
   Content.style.display="none";
+  
+  evalutation();
 })
 
 async function evalutation(){
